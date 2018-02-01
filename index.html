@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Wikipedia Viewer</title>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="Styles/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="Styles/styles.css">
+  <title>Wikipedia Viewer</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="Styles/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="Styles/styles.css">
 </head>
 
 <body>
 
-	<div class="container">
-		<div class="row">
-			<h1 class="text-center">Wikipedia Search</h1>
-			<div class="srh text-center">
-				<form class="navbar-form" role="search">
-				<div class="input-group add-on">
-					<input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-					<div class="input-group-btn">
-						<button class="btn btn-default wiki-search" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-					</div>
-				</div>
-			</form>
-			</div>
-			<div class="buttons text-center">
-				<a href="#" class="btn wiki-search">Search</a>
-				<a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="btn wiki-random">Random</a>
-			</div>
-		</div>
-		<div class="row result">
-			<div class="col-md-offset-2 col-md-8">
-				<div class="panel-group" id="accordion">
-					
-					
-			</div>	
-		</div>
+  <div class="container">
+    <div class="row">
+      <div class="header">
+        <h1 class="heading">Wikipedia Search</h1>
+          <form class="search">
+            <div class="input-group">
+              <input id="search-item" type="search" class="form-control" placeholder="Search" required>
+              <span class="input-group-btn">
+                <a class="btn btn-default wiki-search">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+              </span>
+            </div>
+          </form>
 
-	</div>
+        <div class="buttons">
+          <a href="#" class="btn btn-search">Search</a>
+          <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" class="btn btn-randon">Random</a>
+        </div>
+      </div>
 
-</div>
-	
-	<script type="text/javascript" src="Scripts/jquery.js"></script>
-	<script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
-	<script type="text/javascript" src="Scripts/script.js"></script>
+    </div>
+    <div class="row result">
+      <div class="col-md-offset-2 col-md-8">
+        <div class="panel-group" id="accordion">
+
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="Scripts/jquery.js"></script>
+  <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="Scripts/script.js"></script>
 </body>
+
 </html>

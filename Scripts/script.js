@@ -5,7 +5,7 @@ $(function(){
     $('.wiki-search').on('click', function(e){
        e.preventDefault();
        $panel.html("");
-       var searchTerm = $('#srch-term').val();
+       var searchTerm = $('#search-item').val();
        var count = 1;
 
        $.ajax({

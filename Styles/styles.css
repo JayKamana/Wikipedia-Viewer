@@ -1,42 +1,49 @@
-h1 {
-	margin-bottom: 20px;
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.srh {
-	margin: 0 auto;
-	width: 80%;
+.search {
+  width: 50%;
+  margin-top: 15px;
 }
 
-.input-group {
-	 width: 80%;
-	 margin: 0 auto;
-}
+  @media only screen and (max-width: 900px){
+    .search {
+      width: 70%;
+    }
+  }
 
-.input-group-btn {
-	text-align: left;
-}
+  @media only screen and (max-width: 600px){
+    .search {
+      width: 90%;
+    }
+  }
 
-.result {
-	margin-top: 45px;
-}
 
 .buttons {
-	margin-top: 30px;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
 }
 
-.buttons .wiki-search {
-	color: #fff;
+.btn-search,
+.btn-randon {
+  color: #fff;
+  background: #4e5d6c;
 }
 
-.buttons .wiki-random {
-	color: #fff;
+.btn-search:hover,
+.btn-random:hover {
+  background: #485563;
 }
 
-.buttons a {
-	margin-right: 20px;
-	background: #4e5d6c;
+.btn:active,
+.btn:active {
+  outline: none;
 }
 
-.buttons a:hover {
-	background: #485563; 
+.btn-search {
+  margin-right: 30px;
 }
