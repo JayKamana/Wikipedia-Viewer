@@ -23,20 +23,20 @@
 
 
 .buttons {
-  margin-top: 25px;
+  margin: 25px 0;
   display: flex;
   justify-content: center;
 }
 
 .btn-search,
-.btn-randon {
+.btn-random {
   color: #fff;
   background: #4e5d6c;
 }
 
 .btn-search:hover,
 .btn-random:hover {
-  background: #485563;
+  color: #ccc;
 }
 
 .btn:active,
